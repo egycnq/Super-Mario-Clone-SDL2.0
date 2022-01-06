@@ -40,12 +40,12 @@ Used ECS architecture: https://github.com/redxdev/ECS
 
 - Templates generalize functions in the project.
     - [x] One function is declared with a template that allows it to accept a generic parameter.
-      - An example of this is in [ECH.h](include/ECH.h) line 127.
+      - An example of this is in [ECS.h](include/ECS.h) line 127.
 
 #### Memory Management
 
 - The project uses move semantics to move data, instead of copying it, where possible.
-    - [x] An example of this is in [ECH.h](include/ECH.h) line 30.
+    - [x] An example of this is in [ECS.h](include/ECS.h) line 30.
 
 - The project uses smart pointers instead of raw pointers where possible.
     - [x] The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers.
