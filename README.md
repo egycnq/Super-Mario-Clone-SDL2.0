@@ -10,7 +10,7 @@ Used ECS architecture: https://github.com/redxdev/ECS
 ![Game screenshot](4.png)
 
 
-##Dependencies
+## Dependencies
 
 ```
  cmake sdl2 sdl2_image sdl2_ttf sdl2_mixer bz2
