@@ -50,6 +50,7 @@ Used ECS architecture: https://github.com/redxdev/ECS
 - The project uses smart pointers instead of raw pointers where possible.
     - [x] The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers.
       -   An example of this is in [SoundSystem.h](include/SoundSystem.h) line 25.
+      -   An example of this is in [ECS.h](include/ECS.h) line 88.
     
     
 ## Dependencies
