@@ -15,37 +15,43 @@ Used ECS architecture: https://github.com/redxdev/ECS
 #### Loops, Functions, I/O
 - The project reads data from a file and process the data, or the program writes data to a file.
     - [x] The project [reads data from an external file] or writes data to a file as part of the necessary operation of the program.
-      - In [renderer.cpp](src/renderer.cpp) line 108 on, external image files are loaded into the game.
+      - In [MapSystem.h](include/MapSystem.h) line 26 on, external Map files are loaded into the game.
  
 - The project accepts user input and processes the input.
     - [x] The project accepts input from a user as part of the necessary operation of the program.
-      - This can be seen in the `Controller::HandleInput()` function in [controller.cpp](src/controller.cpp)
+      - This can be seen in the `PlayerSystem::handleEvent(SDL_Event& event)` function in [PlayerSystem.cpp](src/PlayerSystem.cpp)
+
+- The project demonstrates an understanding of C++ functions and control structures.
+    - [x] A variety of control structures are used in the project.
+      - Example loop in [ScoreSystem.cpp](src/ScoreSystem.cpp) lines 76.
 
 #### Object Oriented Programming
 
 - The project uses Object Oriented Programming techniques.
     - [x] The project code is organized into classes with class attributes to hold the data, and class methods to perform tasks.
-      - An example of this is the newly defined [terrain.h](src/terrain.h) file which is a class representing the terrain.
+      - An example of this is in [SoundSystem.h](include/SoundSystem.h) file which is a class representing the Sound System for the game.
 
 - Classes use appropriate access specifiers for class members.
     - [x] All class data members are explicitly specified as public, protected, or private.
 
 - Derived class functions override virtual base class functions.
-    - One member function in an inherited class overrides a virtual base class member function.
+    - [x] One member function in an inherited class overrides a virtual base class member function.
+      - An example of this is in [EnemySystem.h](include/EnemySystem.h) line 12.   
 
 - Templates generalize functions in the project.
-    - One function is declared with a template that allows it to accept a generic parameter.
-
+    - [x] One function is declared with a template that allows it to accept a generic parameter.
+      - An example of this is in [ECH.h](include/ECH.h) line 127.
 
 #### Memory Management
 
 - The project uses move semantics to move data, instead of copying it, where possible.
-    - For classes with move constructors, the project returns objects of that class by value, and relies on the move constructor, instead of copying the object.
+      - [x] An example of this is in [ECH.h](include/ECH.h) line 30.
 
-- The project uses smart pointers instead of raw pointers.
-    - The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers.
-
-
+- The project uses smart pointers instead of raw pointers where possible.
+    - [x] The project uses at least one smart pointer: unique_ptr, shared_ptr, or weak_ptr. The project does not use raw pointers.
+      -   An example of this is in [SoundSystem.h](include/SoundSystem.h) line 25.
+    
+    
 ## Dependencies
 
 ```
@@ -80,8 +86,3 @@ sudo apt-get install libbz2-dev
 - Move:  `Up - Down - Left - Right` 
 - Jump: `Space`
 - Run `LCtrl` 
-
-
-
-
-
